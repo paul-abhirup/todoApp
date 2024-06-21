@@ -20,8 +20,8 @@ const updateTodo = zod.object({
 });
 
 module.exports = {
-  todoSchema,
-  idSchema
+  createTodo,
+  updateTodo
 };
 
 
