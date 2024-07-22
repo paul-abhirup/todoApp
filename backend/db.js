@@ -1,17 +1,17 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-mongoose.connect('mongodb+srv://admin:UvrDFhV8UdhPlr1Q@cluster0.kjqcuxy.mongodb.net/todos');
+mongoose.connect(
+  "mongodb+srv://admin:BLyPfXuDxdEjMoBC@cluster0.kjqcuxy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+);
 
 const todoSchema = mongoose.Schema({
   title: String,
   description: String,
-  completed: Boolean
-}); 
+  completed: Boolean,
+});
 
-const todo = mongoose.model('todos', todoSchema);  
+const todo = mongoose.model("todos", todoSchema);
 
 module.exports = {
-  todo
-};  
-
-
+  todo,
+};
